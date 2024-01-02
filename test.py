@@ -12,7 +12,3 @@ def hello():
 def get_income():
     return jsonify(incomes)
 
-@app.route('/incomes', methods=['POST'])
-def add_income():
-    incomes.append(request.get_json())
-    return "", 204
