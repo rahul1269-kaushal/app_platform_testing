@@ -1,1 +1,1 @@
-web: gunicorn --worker-tmp-dir /dev/shm --config gunicorn_config.py test:app
+web: gunicorn --worker-tmp-dir /dev/shm -b 0.0.0.0:8080 test:app
